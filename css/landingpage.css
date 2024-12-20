@@ -1,0 +1,134 @@
+/* font declared */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+
+/* body styles  */
+body {
+    font-family: "Roboto Serif", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* header Styles */
+header {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* navigation Styles */
+nav {
+    background-color: #d35400;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #f39c12;
+}
+
+/* main Content Styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+
+}
+
+/* image Styles */
+.cake-img {
+    width: 30%;
+    height: auto;
+    display: inline;
+    padding: 10px;
+    transition: transform 0.5s ease;
+    margin-top: 30px;
+}
+
+/* img hover animtion */
+.cake-img:hover {
+    transform: scale(1.1);
+}
+
+/* p styles */
+p {
+    font-size: 25px;
+    margin-top: 20px;
+    outline: 2px solid orange;
+    padding: 5px;
+    transition: transform 0.5s ease;
+}
+
+/* p hover animations */
+p:hover {
+    background-color: #d35400;
+    transform: scale(1.1);
+    color: white;
+}
+
+/* p link tyles in headings */
+p a {
+    text-decoration: none;
+    color: black;
+}
+
+p a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* animation Styles used with the help of chat gpt */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* animation time */
+.fadeIn {
+    animation: fadeIn 3s ease;
+}
+
+/* animation sliding from left when page is loaded  */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* animation time */
+.fadeIn {
+    animation: slideInFromLeft 5s ease;
+}
+
+/* footer Styles */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1em;
+}

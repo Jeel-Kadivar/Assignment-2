@@ -1,0 +1,143 @@
+/* some css copied from homepage css */
+
+/* font declared */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+/* body styles */
+body {
+    font-family: "Roboto Serif", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* header Styles */
+header {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* navigation Styles */
+nav {
+    background-color: #d35400;
+    padding: 10px;
+    text-align: center;
+}
+
+/* navigation a style */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* navigation hover */
+nav a:hover {
+    background-color: #f39c12;
+}
+
+/* p style */
+p {
+    text-align: center;
+    background-color: #e67e22;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+/* content containerstle */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+/* div container style */
+.pastry {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* image style */
+.cake-img {
+    transition: all 0.1s ease;
+    transform: translateX(-4px);
+}
+
+/* hover animation */
+.cake-img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 3px solid orange;
+}
+
+/* hover animation */
+.pastry:hover {
+    transform: translateY(-5px);
+}
+
+/* animation Styles used with the help of chat gpt */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* fade in animation */
+.fadeIn {
+    animation: fadeIn 2s ease;
+}
+
+@keyframes rotateCards {
+
+    0% {
+        transform: rotateY(0deg);
+    }
+
+   100% {
+        transform: rotateY(360deg);
+    }
+
+}
+
+/* cards rotate animation */
+.fadeIn {
+    animation: rotateCards 3s ease;
+}
+
+/* image style */
+.pastry img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* header style */
+.pastry h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+/* footer style */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 18em;
+}
